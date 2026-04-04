@@ -1,0 +1,75 @@
+.postList {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.postList h2 {
+  color: #667eea;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.postItem {
+  padding: 18px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.postItem:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.1);
+}
+
+.postItem h3 {
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.postItem p {
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.error {
+  color: #f5576c;
+  font-weight: bold;
+  padding: 20px;
+  background: rgba(245, 87, 108, 0.1);
+  border-radius: 12px;
+  border-left: 4px solid #f5576c;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  color: #667eea;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+  

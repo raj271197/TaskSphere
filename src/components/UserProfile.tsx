@@ -10,7 +10,7 @@ const UserProfile = ({ name, profilePicture, bio }: Props) => {
   return (
     <div className={styles.card}>
       <img src={profilePicture} alt="Profile" className={styles.img} />
-      <h2>{name}</h2>
+      <h2>👤 {name}</h2>
       <p>{bio}</p>
     </div>
   );
