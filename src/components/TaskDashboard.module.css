@@ -1,0 +1,391 @@
+.shell {
+  width: min(1200px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 40px 0 72px;
+}
+
+.hero {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  align-items: end;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  color: #92400e;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 18px 0 12px;
+  color: #0f172a;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  line-height: 0.95;
+}
+
+.hero p {
+  max-width: 60ch;
+  color: #334155;
+  font-size: 1.05rem;
+}
+
+.metrics {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.metrics article,
+.statusBar,
+.editorCard,
+.column,
+.loadingCard {
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.metrics article {
+  border-radius: 24px;
+  padding: 22px;
+}
+
+.metrics span {
+  display: block;
+  color: #64748b;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.metrics strong {
+  display: block;
+  margin-top: 6px;
+  color: #0f172a;
+  font-size: 2.4rem;
+}
+
+.statusBar {
+  margin-top: 24px;
+  padding: 18px 22px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.statusBar strong {
+  color: #0f172a;
+  font-size: 0.98rem;
+}
+
+.statusBar p {
+  margin-top: 4px;
+  color: #475569;
+}
+
+.healthBadge {
+  min-width: 132px;
+  padding: 12px 14px;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ok {
+  background: rgba(34, 197, 94, 0.12);
+  color: #166534;
+}
+
+.degraded {
+  background: rgba(245, 158, 11, 0.18);
+  color: #92400e;
+}
+
+.errorBanner {
+  margin-top: 20px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(220, 38, 38, 0.12);
+  color: #991b1b;
+  border: 1px solid rgba(220, 38, 38, 0.22);
+}
+
+.workspace {
+  margin-top: 28px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(320px, 380px) minmax(0, 1fr);
+}
+
+.editorCard {
+  border-radius: 28px;
+  padding: 24px;
+  align-self: start;
+}
+
+.cardHeader,
+.columnHeader,
+.actionRow,
+.metaRow,
+.taskCardTop,
+.fieldRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cardEyebrow {
+  color: #92400e;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.editorCard h2 {
+  margin-top: 8px;
+  color: #0f172a;
+  font-size: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.field span {
+  color: #334155;
+  font-weight: 600;
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 14px 16px;
+  color: #0f172a;
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  outline: none;
+  border-color: rgba(217, 119, 6, 0.7);
+  box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.18);
+}
+
+.fieldRow {
+  align-items: end;
+}
+
+.primaryButton,
+.secondaryButton,
+.dangerButton {
+  border: none;
+  border-radius: 16px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.primaryButton {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  color: #fffdf5;
+  box-shadow: 0 16px 32px rgba(234, 88, 12, 0.28);
+}
+
+.primaryButton:disabled {
+  cursor: wait;
+  opacity: 0.8;
+}
+
+.secondaryButton,
+.dangerButton {
+  padding: 10px 14px;
+}
+
+.secondaryButton {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.dangerButton {
+  background: rgba(220, 38, 38, 0.12);
+  color: #991b1b;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover,
+.dangerButton:hover {
+  transform: translateY(-1px);
+}
+
+.board {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.column,
+.loadingCard {
+  border-radius: 28px;
+  padding: 20px;
+}
+
+.columnHeader h3 {
+  color: #0f172a;
+  font-size: 1.12rem;
+}
+
+.columnHeader span {
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  background: rgba(15, 23, 42, 0.06);
+  color: #334155;
+  font-weight: 700;
+}
+
+.columnBody {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.taskCard {
+  padding: 16px;
+  border-radius: 22px;
+  background: rgba(248, 250, 252, 0.92);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.taskCard h4 {
+  margin-top: 12px;
+  color: #0f172a;
+  font-size: 1.05rem;
+}
+
+.taskCard p {
+  margin-top: 8px;
+  color: #475569;
+  min-height: 48px;
+}
+
+.metaRow {
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.actionRow {
+  margin-top: 14px;
+}
+
+.priorityBadge,
+.dateLabel {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.priorityBadge {
+  padding: 6px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.dateLabel {
+  color: #64748b;
+}
+
+.low {
+  background: rgba(59, 130, 246, 0.12);
+  color: #1d4ed8;
+}
+
+.medium {
+  background: rgba(245, 158, 11, 0.14);
+  color: #b45309;
+}
+
+.high {
+  background: rgba(220, 38, 38, 0.12);
+  color: #991b1b;
+}
+
+.loadingCard,
+.emptyState {
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .hero,
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .shell {
+    width: min(100vw - 20px, 1200px);
+    padding-top: 28px;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .statusBar,
+  .cardHeader,
+  .fieldRow,
+  .taskCardTop,
+  .metaRow,
+  .actionRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actionRow {
+    width: 100%;
+  }
+
+  .actionRow button {
+    width: 100%;
+  }
+}
