@@ -1,0 +1,32 @@
+[
+  {
+    "id": "seed-design-system",
+    "title": "Review deployment checklist",
+    "description": "Confirm environment variables and Render settings before shipping.",
+    "status": "todo",
+    "priority": "high",
+    "dueDate": null,
+    "createdAt": "2026-04-18T12:00:00.000Z",
+    "updatedAt": "2026-04-18T12:00:00.000Z"
+  },
+  {
+    "id": "seed-api-monitoring",
+    "title": "Smoke test API health endpoint",
+    "description": "Validate that /api/health reports the active storage mode.",
+    "status": "in_progress",
+    "priority": "medium",
+    "dueDate": null,
+    "createdAt": "2026-04-18T12:05:00.000Z",
+    "updatedAt": "2026-04-18T12:05:00.000Z"
+  },
+  {
+    "id": "seed-launch-ready",
+    "title": "Launch TaskSphere",
+    "description": "Ship the recruiter-ready version once CRUD, lint, and build checks all pass.",
+    "status": "done",
+    "priority": "low",
+    "dueDate": null,
+    "createdAt": "2026-04-18T12:10:00.000Z",
+    "updatedAt": "2026-04-18T12:10:00.000Z"
+  }
+]
